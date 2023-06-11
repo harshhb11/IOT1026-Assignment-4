@@ -26,6 +26,7 @@ Also, there's a RobotTester class where it provides an interactive interface for
 
 We added commands which made the robot moved in specific direction as mentioned earlier like west, south, north, east, west and also turning on and off.
 
+[![ci](https://github.com/harshhb11/IOT1026-Assignment-4/actions/workflows/ci.yml/badge.svg)](https://github.com/harshhb11/IOT1026-Assignment-4/actions/workflows/ci.yml)
 
 [Assignment Instructions](docs/instructions.md)  
 [How to start coding](docs/how-to-use.md)  
