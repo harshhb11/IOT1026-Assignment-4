@@ -1,9 +1,10 @@
 ﻿using Assignment.InterfaceCommand;
+using System;
 
 namespace Assignment
 {
     // Import the required namespace(s) for the code to work
-    // ...
+
 
     public class RobotTester
     {
@@ -11,14 +12,14 @@ namespace Assignment
         public void TestRobotCommands()
         {
             Robot robot = new Robot(); // Create a new instance of the Robot class
-            string commandString;
+            string? commandString;
 
             while (true)
             {
                 Console.WriteLine("Enter a command ('exit' to quit):");
                 commandString = Console.ReadLine();
 
-                if (commandString.Equals("exit", StringComparison.OrdinalIgnoreCase))
+                if (string.Equals(commandString, "exit", StringComparison.OrdinalIgnoreCase))
                     break;
 
                 IRobotCommand command = ConvertToCommand(commandString); // Convert the user's input to a robot command
@@ -37,8 +38,11 @@ namespace Assignment
         }
 
         // Method to convert a string command to a corresponding robot command object
-        private IRobotCommand ConvertToCommand(string commandString)
+        private IRobotCommand? ConvertToCommand(string? commandString)
         {
+            if (string.IsNullOrEmpty(commandString))
+                return null;
+
             switch (commandString.ToLower()) // Convert the command string to lowercase for case-insensitive comparison
             {
                 case "on":

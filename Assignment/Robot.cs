@@ -6,6 +6,7 @@ namespace Assignment
 
     public class Robot
     {
+         public bool IsPlaced { get; set; }
         // Define public properties
         public int NumCommands { get; } // Represents the number of commands the robot can store
         public int X { get; set; } // Represents the X coordinate of the robot's position
