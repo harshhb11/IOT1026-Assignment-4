@@ -29,13 +29,13 @@ namespace Assignment
     }
 
     public class EastCommand : RobotCommand
+{
+    public override void Run(Robot robot)
     {
-        public override void Run(Robot robot)
-        {
-            if (robot.IsPowered)
-                robot.X++;
-        }
+        if (robot.IsPowered)
+            robot.X += 1;
     }
+}
 
     public class SouthCommand : RobotCommand
     {
