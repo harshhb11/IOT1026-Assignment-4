@@ -2,6 +2,13 @@
 
 namespace Assignment
 {
+    public enum Direction
+    {
+        North,
+        South,
+        East,
+        West
+    }
 
 
     public class Robot

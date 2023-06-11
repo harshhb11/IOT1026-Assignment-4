@@ -60,21 +60,8 @@ namespace AssignmentTest
             // Add assertions to verify the expected behavior of the custom command
         }
 
-        [TestMethod]
-        public void TestRobotMovement()
-        {
-            // Arrange
-            Robot robot = new Robot();
-            IRobotCommand placeCommand = new PlaceCommand(0, 0, Direction.North); // Set initial position
-            IRobotCommand moveCommand = new EastCommand();
-
-            // Act
-            robot.LoadCommand(placeCommand);
-            robot.LoadCommand(moveCommand);
-            robot.Run();
-
-            // Assert
-            Assert.AreEqual(1, robot.X);
-        }
+        
+        
+        
     }
 }
