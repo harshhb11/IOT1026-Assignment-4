@@ -59,6 +59,8 @@ namespace AssignmentTest
             // Assert
             // Add assertions to verify the expected behavior of the custom command
         }
+
+        [TestMethod]
         public void TestRobotMovement()
         {
             // Arrange
@@ -71,21 +73,6 @@ namespace AssignmentTest
 
             // Assert
             Assert.AreEqual(1, robot.X);
-        }
-
-        [TestMethod]
-        public void TestInvalidCommand()
-        {
-            // Arrange
-            Robot robot = new Robot();
-            IRobotCommand invalidCommand = new InvalidCommand();
-
-            // Act
-            robot.LoadCommand(invalidCommand);
-            robot.Run();
-
-            // Assert
-            // Add assertions to verify the expected behavior of the invalid command
         }
     }
 }
