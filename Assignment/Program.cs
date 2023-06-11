@@ -15,10 +15,10 @@ namespace Assignment
 
             while (true)
             {
-                Console.WriteLine("Enter a command ('exit' to quit):"); 
-                commandString = Console.ReadLine(); 
+                Console.WriteLine("Enter a command ('exit' to quit):");
+                commandString = Console.ReadLine();
 
-                if (commandString.Equals("exit", StringComparison.OrdinalIgnoreCase)) 
+                if (commandString.Equals("exit", StringComparison.OrdinalIgnoreCase))
                     break;
 
                 IRobotCommand command = ConvertToCommand(commandString); // Convert the user's input to a robot command
