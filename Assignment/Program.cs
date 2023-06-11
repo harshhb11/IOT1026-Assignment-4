@@ -1,5 +1,5 @@
-﻿using Assignment.InterfaceCommand;
-using System;
+﻿using System;
+using Assignment.InterfaceCommand;
 
 namespace Assignment
 {
